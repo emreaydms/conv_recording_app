@@ -96,7 +96,9 @@ def main():
 
         st.subheader("Extracted Entities:")
         st.markdown("### Organizations (ORGs):")
-        st.write(grouped_entities["ORGs"])
+        for item in grouped_entities["ORGs"]:
+            st.write(item)
+        #st.write(grouped_entities["ORGs"])
 
         st.markdown("### Locations (LOCs):")
         st.write(grouped_entities["LOCs"])
