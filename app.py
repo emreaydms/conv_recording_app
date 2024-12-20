@@ -9,7 +9,7 @@ def load_whisper_model():
     """
     Load the Whisper model for audio transcription.
     """
-    asr_pipeline = pipeline("automatic-speech-recognition", model="openai/whisper-tiny", task="transcribe")
+    asr_pipeline = pipeline("automatic-speech-recognition", model="openai/whisper-tiny")
     return asr_pipeline
 
 
