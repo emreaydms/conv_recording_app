@@ -96,13 +96,13 @@ def main():
 
         st.subheader("Extracted Entities:")
         st.markdown("### Organizations (ORGs):")
-        st.write(list(grouped_entities["ORGs"].keys()))
+        st.write(grouped_entities["ORGs"].values())
 
         st.markdown("### Locations (LOCs):")
-        st.write(list(grouped_entities["LOCs"].keys()))
+        st.write(grouped_entities["LOCs"].values())
 
         st.markdown("### Persons (PERs):")
-        st.write(list(grouped_entities["PERs"].keys()))
+        st.write(grouped_entities["PERs"].values())
 
 if __name__ == "__main__":
     main()
