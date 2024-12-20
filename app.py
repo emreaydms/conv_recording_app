@@ -97,17 +97,17 @@ def main():
         st.subheader("Extracted Entities:")
         st.markdown("### Organizations (ORGs):")
         for item in grouped_entities["ORGs"]:
-            st.write("·" + item)
+            st.write("· " + item)
         #st.write(grouped_entities["ORGs"])
 
         st.markdown("### Locations (LOCs):")
         for item in grouped_entities["LOCs"]:
-            st.write("·" + item)
+            st.write("· " + item)
         #st.write(grouped_entities["LOCs"])
 
         st.markdown("### Persons (PERs):")
         for item in grouped_entities["PERs"]:
-            st.write("·" + item)
+            st.write("· " + item)
         #st.write(grouped_entities["PERs"])
 
 if __name__ == "__main__":
