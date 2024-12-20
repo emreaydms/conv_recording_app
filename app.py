@@ -36,7 +36,7 @@ def transcribe_audio(uploaded_file):
         str: Transcribed text from the audio file.
     """
     model = load_whisper_model()
-    transcription = model(uploaded_file)
+    transcription = model(uploaded_file, return_timestamps=True)
     return transcription["text"]
 
 
