@@ -85,7 +85,7 @@ def main():
 
     if uploaded_file is not None:
         st.info("Transcribing the audio file... This may take a minute.")
-        transcription = transcribe_audio(uploaded_file)
+        transcription = transcribe_audio(uploaded_file.getvalue())
 
         st.subheader("Transcription:")
         st.write(transcription)
