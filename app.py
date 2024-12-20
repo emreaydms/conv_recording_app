@@ -102,7 +102,7 @@ def main():
         st.write(list(grouped_entities["LOCs"].keys()))
 
         st.markdown("### Persons (PERs):")
-        st.write(list(grouped_entities["PERs"]).keys()))
+        st.write(list(grouped_entities["PERs"].keys()))
 
 if __name__ == "__main__":
     main()
